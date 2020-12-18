@@ -49,7 +49,7 @@ def json_serial(obj):
         return obj.isoformat()
     raise TypeError("Type %s not serializable." % type(obj))
 
-def run_from_lamba(func, description, definitions, required, event) -> str:
+def run_from_lambda(func, description, definitions, required, event) -> str:
     """
     Entry point from Amazon Lambda.
     """
